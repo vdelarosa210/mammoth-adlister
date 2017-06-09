@@ -6,6 +6,12 @@ public class Config {
     private String user;
     private String password;
 
+    public Config(){
+        url = "jdbc:mysql://localhost/adlister_db?useLegacyDatetimeCode=false&serverTimezone=UTC";
+        user = "adlister";
+        password = "";
+    }
+
     public String getUrl() {
         return url;
     }
